@@ -42,7 +42,7 @@
 
 \title[NIHR ARC North East and North Cumbria]{\textbf{Valuation of the Weight-Specific Adolescent Instrument for Economic Evaluation using online personal utility functions in an adult population}}
 \subtitle{}
-\author[King, Will]{Will King \\ \small email: \href{mailto:w.king2@ncl.ac.uk}{w.king2@ncl.ac.uk}}
+\author[King, Will]{Will King \\ \small email: \href{mailto:w.king2@ncl.ac.uk}{w.king2@ncl.ac.uk} \\ \small co-authors: Tom Robinson, Angela Bate, Laura Ternent}
 \institute{NIHR ARC North East and
 North Cumbria, \\
 Newcastle University}
@@ -63,9 +63,10 @@ Newcastle University}
 % ==============================================================
 %                         --- TOC
 % ==============================================================
+\section*{Presentation structure}
 \begin{frame}
 \tableofcontents
-\frametitle{Table of contents}
+\frametitle{Presentation structure}
 \end{frame}
 
 
@@ -169,10 +170,9 @@ Newcastle University}
 \begin{frame}{Survey structure}
     \frametitle{Survey structure}
 \begin{itemize}
-    \item Consent and Prolific ID
-    \item WAItE descriptive system
-    \item Attribute selection: \textit{determine most important attribute}   
-    \item Attribute swing weighting: \textit{determine relative importance of other attributes} 
+    \item Consent
+    \item WAItE descriptive system   
+    \item Attribute weighting: \textit{determine relative importance of the attributes} 
     \item Level rating: \textit{determine importance of levels within each attribute}
     \item Anchoring: \textit{determine the utility value of the worst WAItE health state}
     \item Survey feedback and demographic questions
@@ -399,12 +399,9 @@ w_j = \begin{bmatrix}
   \quad Unhappiness & 70 (31.9) & 80 (50; 100) & 0 & 100 \\
   \quad Treated differently & 52.1 (35.6) & 50 (15.8; 86) & 0 & 100 \\
 \textbf{Anchoring} &  &  &  &  \\
-  \quad PITS preferred to death & 87.9\% (32.7\%) & 1 (1; 1) & 0 & 1 \\
-  \quad PITS-VAS & 56.1 (31.3) & 54 (30; 85) & 0 & 100 \\
-  \quad Dead-VAS & 42.5 (31.6) & 38.5 (13.2; 63.5) & 1 & 100 \\
-  \quad PITS VAS uncensored & -0.025 (5.95) & 0.5 (0.2; 0.8) & -99 & 1 \\
-  \quad PITS VAS censored & 0.431 (0.485) & 0.5 (0.2; 0.8) & -1 & 1 \\
-  \quad PITS Utility Value (winsorized \& imputed) & 0.282 (1.456) & 0.5 (0.2; 0.8) & -14.3 & 1 \\
+  \quad WAItE PITS preferred to death & 87.9\% (32.7\%) & 1 (1; 1) & 0 & 1 \\
+  \quad WAItE PITS VAS & -0.025 (5.95) & 0.5 (0.2; 0.8) & -99 & 1 \\
+  \quad WAItE PITS Utility Value (winsorized \& imputed) & 0.282 (1.456) & 0.5 (0.2; 0.8) & -14.3 & 1 \\
    \hline
 \end{tabular}
 \end{table}
@@ -414,7 +411,7 @@ w_j = \begin{bmatrix}
 \begin{frame}{Results}
     \frametitle{Anchoring distribution}
 \begin{itemize}
-    \item The distribution of PITS utility values were significantly left skewed (illustrated in the figure below). To mitigate this winsorization of values which lay in the outer 0.1\% of the distribution was conducted. Missing values were imputed using multiple imputation by chained equations. 
+    \item The distribution of PITS utility values were significantly left skewed (illustrated in the figure below). To mitigate this, winsorization of values which lay in the outer 0.1\% of the distribution was conducted. Missing values were imputed using multiple imputation by chained equations. 
 \end{itemize}
 \begin{figure}[h]
     \centering
@@ -555,11 +552,11 @@ Total (SS\(_T\)) & 299 & 11576403.042 & 1.000 &  & \\
 \begin{frame}{Discussion}
     \frametitle{Discussion}
     \begin{itemize}
-    \item Winsorization of PITS utility values
     \item Tiredness and Unhappiness were considered the most important domains while Embarrassment and Sports the least.
     \begin{itemize}
         \item This was consistent with prior valuation studies that have been completed with the WAItE.
     \end{itemize}
+    \item Winsorization limited the effect of outliers on the anchoring factor
     \item EUD and PERMANOVA were used to explore preference heterogeneity and age was shown to have a significant impact on preferences.
     \begin{itemize}
         \item Younger participants generally had lower health state utility values for equivalent health states than older participants. 
